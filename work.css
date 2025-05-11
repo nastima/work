@@ -1,7 +1,7 @@
 /*Подключение шрифта*/
 @font-face {
     font-family: "TT Lakes";
-    src: url("../fonts/TTLakes-Regular.woff");
+    src: url("./fonts/TTLakes-Regular.woff");
 }
 
 /*Общие свойства*/
@@ -162,6 +162,7 @@ body {
     border-radius: 20px;
     width: 40px;
     height: 40px;
+    cursor: pointer;
 }
 
 /* Пагинация */
