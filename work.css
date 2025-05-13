@@ -78,19 +78,19 @@ body {
     padding: 0 16px;
 
     max-width: 240px;
-    min-width: 240px; /* фиксированная ширина */
+    min-width: 240px;
     height: 72px;
 
     display: flex;
     justify-content: space-between;
-    flex-shrink: 0; /* запрет на сжатие */
+    flex-shrink: 0;
     align-items: center;
 
-    /* touch-action: pan-x;*/
+    touch-action: pan-x;
 
-     border: 1px solid #EAEAEA;
-     background-color: #FFFFFF;
-     border-radius: 6px;
+    border: 1px solid #EAEAEA;
+    background-color: #FFFFFF;
+    border-radius: 6px;
  }
 
  /* Секция свг код */
@@ -227,7 +227,6 @@ body {
 }
 
 
-
 /*ПРИ 768*/
 
 @media (min-width: 768px) {
@@ -245,25 +244,22 @@ body {
 
     /* Секция Свайпер */
     .swiper {
-        overflow: visible; /* Отключаем скрытие */
+        overflow: visible;
         position: relative;
     }
 
     /* Секция контейнер для слайдов */
     .swiper-wrapper {
-        display: flex;
         flex-wrap: wrap;
         gap: 16px 24px;
-        transform: none !important; /* Отключаем трансформации Swiper */
-        margin-left: 24px;
-        margin-top: 24px;
+        max-width: 768px;
+        margin-right: auto;
     }
 
     /* Слайды */
     .swiper-slide {
         max-width: 224px;
-        min-width: 224px; /* фиксированная ширина */
-        flex-shrink: 1; /* Разрешаем сжатие */
+        min-width: 224px;
         margin: 0;
     }
 
@@ -337,7 +333,13 @@ body {
     /* Секция контейнер для слайдов */
     .swiper-wrapper {
         gap: 16px 32px;
-        margin-left: 32px;
+        max-width: 1120px;
+        margin-right: auto;
+    }
+
+    /* Слайды */
+    .swiper-slide {
+        width: 25%;
     }
 
     /* Градиент справа */
